@@ -16,6 +16,6 @@
   function saveName() {
     var name = document.getElementById("name");
     localStorage.setItem("name", name.value);
-    document.getElementById("output").value = localStorage.getItem("name");
+    document.getElementById("output").value = name;
   }
 </script>
