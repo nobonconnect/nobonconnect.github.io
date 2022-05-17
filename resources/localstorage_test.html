@@ -3,6 +3,7 @@
 <form>
   <label for="name">Your Name:</label><br>
   <input type="text" id="name" name="name"><br>
+  <button onclick="saveName()" type="button">Save Name</button>
 </form>
 
 <br>
@@ -12,6 +13,8 @@
 <script>
   document.getElementById("output") = localStorage.getItem("name");
   
-  var name = document.getElementById("name");
-  localStorage.setItem("name", name.value);
+  function saveName() {
+    var name = document.getElementById("name");
+    localStorage.setItem("name", name.value);
+  }
 </script>
