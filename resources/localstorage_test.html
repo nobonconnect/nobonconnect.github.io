@@ -11,7 +11,7 @@
 <p id="output"> </p>
 
 <script>
-  document.getElementById("output") = localStorage.getItem("name");
+  document.getElementById("output").value = localStorage.getItem("name");
   
   function saveName() {
     var name = document.getElementById("name");
