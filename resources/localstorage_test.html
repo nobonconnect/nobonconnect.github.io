@@ -1,0 +1,17 @@
+<h1>localStorage Test</h1>
+
+<form>
+  <label for="name">Your Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+</form>
+
+<br>
+
+<p id="output"> </p>
+
+<script>
+  document.getElementById("output") = localStorage.getItem("name");
+  
+  var name = document.getElementById("name");
+  localStorage.setItem("name", name.value);
+</script>
