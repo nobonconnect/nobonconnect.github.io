@@ -11,11 +11,14 @@
 <p id="output"> </p>
 
 <script>
-  document.getElementById("output").value = localStorage.getItem("name");
-  
+  function getName() {
+    document.getElementById("output").innerText = localStorage.getItem("name");
+  }
+  getName();
+
   function saveName() {
     var name = document.getElementById("name");
     localStorage.setItem("name", name.value);
-    document.getElementById("output").value = name;
+    getName();
   }
 </script>
