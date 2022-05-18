@@ -18,7 +18,7 @@
     var randresult = Math.floor(Math.random()*(max-min+1)+min);
     var newscore = score + randresult
     localStorage.setItem("test_int", newscore);
-    getScore();
+    var score = localStorage.getItem("test_int");
   }
   
   function alertScore() {
