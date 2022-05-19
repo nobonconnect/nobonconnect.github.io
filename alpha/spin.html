@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://nobonconnect.github.io/style.css">
+
+<h1>NOBON Connect SPIN<sub>Alpha</sub></h1>
+<br>
+<p id="output"> </p>
+<br>
+<button onclick="setValue">SPIN!</button>
+
+<script>
+  function getValue() {
+    document.getElementById("output").innerText = localStorage.getItem("testinput");
+  }
+  getValue();
+
+  function setValue() {
+    var name = document.getElementById("name");
+    localStorage.setItem("testinput", name.value);
+    getName();
+  }
+</script>
